@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <main className="min-h-auto w-full bg-gray-100 text-gray-700">
       {/* Header */}
-      <header className="flex w-full items-center justify-between border-b-2 border-gray-200 bg-gradient-to-r from-purple-200 via-green-50 to-green-200 p-2">
+      <header className="flex w-full items-center justify-between border-b-2 border-gray-200 bg-gradient-to-r from-blue-200 via-green-50 to-green-200 p-2">
         {/* Logo */}
         <div className="flex items-center justify-center space-x-2">
           <button type="button" className="text-3xl " onClick={() => setAsideOpen(!asideOpen)}>
@@ -30,7 +30,7 @@ const Navbar = () => {
           {/* Dropdown Profile */}
           {profileOpen && (
             <div 
-              className="absolute right-2 mt-1 w-48 divide-y divide-gray-200 rounded-md border border-gray-200 bg-green-200 shadow-md"
+              className="absolute right-2 mt-1 w-48 divide-y divide-gray-200 rounded-md border border-gray-200 bg-green-100 shadow-md"
               onBlur={() => setProfileOpen(false)}
             >
               <div className="flex items-center space-x-2 p-2">
@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className="flex">
         {/* Aside */}
         {asideOpen && (
-          <aside className="absolute flex w-72 flex-col space-y-2 border-r-2 border-gray-200 p-2 bg-purple-200" style={{ height: '90.5vh' }}>
+          <aside className="absolute flex w-72 flex-col space-y-2 border-r-2 border-gray-200 p-2 bg-gradient-to-r from-cyan-200 to-green-50" style={{ height: '90.5vh' }}>
             <Link to='/' className="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
               <span className="text-2xl"><i className="bx bx-home"></i></span>
               <span>Accueil</span>
