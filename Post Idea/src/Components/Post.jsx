@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LikeButton from './LikeButton';
 
-const Post = () => {
+const Post = ({ content }) => {
     const [likeState, setLikeState] = useState(false);
     const [likes, setLikes] = useState(0);
 
@@ -22,7 +22,7 @@ const Post = () => {
                         <h1 className='font-bold text-gray-700'>Post</h1>
                         <div className="mt-4">
                             <p className="mt-4 text-md text-gray-600 max-h-[11em] overflow-scroll text-sm scrollbarNone">
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happines Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum modi tempore voluptatum id doloribus excepturi magnam quae ex. Dolorum, quas? Facere unde ullam sit culpa fuga cupiditate error iure reiciendis voluptatem eos! Quae corporis mollitia odit deserunt aperiam fuga amet facere ipsum nobis debitis, laudantium eius quod aut ratione dolores!
+                                {content}
                             </p>
                             <div className="flex justify-between items-center mt-4">
                                 <div className="flex items-center space-x-4 py-6">
