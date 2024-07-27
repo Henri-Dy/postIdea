@@ -1,3 +1,29 @@
 *{
   transition :0.5s ease;
 }
+
+/* scrollbar visibility turned off*/
+@media screen and (min-width:900px){
+  .scrollbarNone {
+    scrollbar-width: 10px;/* Désactive le défilement */
+  }
+  
+  .scrollbarNone::-webkit-scrollbar {
+    display: none; /* Masque la barre de défilement */
+  }
+}
+
+/* styles for like button */
+.like-button {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.1s ease;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button.liked {
+  transform: scale(1.2);
+  color: cyan;
+}

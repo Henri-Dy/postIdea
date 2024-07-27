@@ -7,7 +7,7 @@ const NewPost = () => {
   const [charCount, setCharCount] = useState(0);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 ">
       <div className="heading text-center font-bold text-2xl m-5 text-gray-800">New Post</div>
       <style>{`body {background:white !important;}`}</style>
       <motion.div 

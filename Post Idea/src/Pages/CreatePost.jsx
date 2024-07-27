@@ -3,7 +3,7 @@ import NewPost from '../Components/NewPost'
 
 const CreatePost = () => {
   return (
-    <div>
+    <div className='mt-[4em]'>
         <NewPost />
     </div>
   )
