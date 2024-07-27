@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <main className="min-h-auto w-full bg-gray-100 text-gray-700">
       {/* Header */}
-      <header className="flex w-full items-center justify-between border-b-2 border-gray-200 bg-gradient-to-r from-blue-200 via-green-50 to-green-200 p-2">
+      <header className="flex w-full items-center justify-between border-b-2 border-gray-200 bg-gradient-to-r from-cyan-200 via-green-50 to-green-200 p-2">
         {/* Logo */}
         <div className="flex items-center justify-center space-x-2">
           <button type="button" className="text-3xl " onClick={() => setAsideOpen(!asideOpen)}>
