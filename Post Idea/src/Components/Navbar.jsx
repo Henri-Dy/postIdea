@@ -14,8 +14,9 @@ const Navbar = () => {
           <button type="button" className="text-3xl " onClick={() => setAsideOpen(!asideOpen)}>
             <i className="fa-solid fa-caret-down"></i>
           </button>
-          <div>Post It !</div>
+          <div>Post Ideas !</div>
         </div>
+
 
         {/* Profile Button */}
         <div className="relative">
