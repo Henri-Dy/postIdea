@@ -28,7 +28,7 @@ const Connexion = () => {
                         <input type="password" name="password" id="password" placeholder="Your Password" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 " />
                     </div>
                     <div className="mb-6">
-                        <button type="button" className="w-full px-3 py-4 text-white bg-gradient-to-r from-cyan-500 to-green-400 rounded-md focus:bg-indigo-600 focus:outline-none">Sign in</button>
+                        <button type="button" className="w-full px-2 py-4 text-white bg-gradient-to-r from-cyan-500 to-green-400 rounded-md focus:bg-indigo-600 focus:outline-none">Sign in</button>
                     </div>
                     <p className="text-sm text-center text-gray-400">Don&#x27;t have an account yet? <Link to='/Inscription' className="text-green-400 focus:outline-none focus:underline focus:text-indigo-500 ">Sign up</Link></p>
                 </form>

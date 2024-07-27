@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [profileOpen, setProfileOpen] = useState(false);
-    const [asideOpen, setAsideOpen] = useState(true);
+    const [asideOpen, setAsideOpen] = useState(false);
   return (
     <main className="min-h-auto w-full bg-gray-100 text-gray-700 fixed top-0">
       {/* Header */}

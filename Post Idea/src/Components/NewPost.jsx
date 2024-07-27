@@ -7,13 +7,13 @@ const NewPost = () => {
   const [charCount, setCharCount] = useState(0);
 
   return (
-    <div className="container mx-auto p-4 ">
+    <div className="container mx-auto p-4 w-full ">
       <div className="heading text-center font-bold text-2xl m-5 text-gray-800">New Post</div>
       <style>{`body {background:white !important;}`}</style>
       <motion.div 
-        className="editor mx-auto w-10/12 flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl rounded-lg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        className="editor mx-auto w-full flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl rounded-lg"
+        initial={{ opacity: 0 , x : -30}}
+        animate={{ opacity: 1, x : 0 }}
         transition={{ duration: 0.5 }}
       >
         <input 
@@ -45,8 +45,8 @@ const NewPost = () => {
 
         {/* Buttons */}
         <div className="buttons flex ">
-          <div className="btn  p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto rounded-md">Annuler</div>
-          <div className="btn border border-indigo-500 p-1 px-4 font-semibold cursor-pointer text-gray-200 ml-2 bg-gradient-to-r from-purple-500  to-green-500 rounded-md ">Poster</div>
+          <div className="btn  p-1 px-4 font-semibold cursor-pointer bg-gray-300 text-gray-500 ml-auto rounded-md">Annuler</div>
+          <div className="btn border  p-1 px-4 font-semibold cursor-pointer text-gray-200 ml-2 bg-gradient-to-r from-cyan-500  to-green-500 rounded-md ">Poster</div>
         </div>
       </motion.div>
     </div>
