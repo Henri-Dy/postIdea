@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Inscription = () => {
   return (
@@ -7,7 +8,11 @@ const Inscription = () => {
      
 <div className="bg-grey-lighter min-h-screen flex justify-center items-center">
             <div className="container max-w-sm md:max-w-md mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                <div className="bg-white px-[3em] py-8 rounded shadow-md text-black w-full">
+                <motion.div 
+                    initial={{ opacity: 0 , x : -30}}
+                    animate={{ opacity: 1, x : 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="bg-white px-[3em] py-8 rounded shadow-md text-black w-full">
                     <h1 className="mb-8 text-3xl text-center font-bold text-gray-700">Sign up</h1>
                     <input 
                         type="text"
@@ -46,7 +51,7 @@ const Inscription = () => {
                              Privacy Policy
                         </a>
                     </div>
-                </div>
+                </motion.div>
 
                 <div className="text-grey-dark mt-6">
                     Already have an account? 

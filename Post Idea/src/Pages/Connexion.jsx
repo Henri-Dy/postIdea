@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Connexion = () => {
-  return (
+    return (
     <div className=' flex justify-center items-center h-screen'>
-     
-
-
-<div className="flex items-center  bg-white px-4 w-full md:max-w-[32em] rounded-lg">
+    
+<motion.div 
+    initial={{ opacity: 0 , x : -30}}
+    animate={{ opacity: 1, x : 0 }}
+    transition={{ duration: 0.5 }}
+    className="flex items-center  bg-white px-4 w-full md:max-w-[32em] rounded-lg"
+    >
     <div className='w-full'>
         <div className=" py-5 w-full">
             <div className="text-center">
@@ -35,7 +39,7 @@ const Connexion = () => {
             </div>
         </div>
     </div>
-</div>
+</motion.div>
  </div>
   )
 }
